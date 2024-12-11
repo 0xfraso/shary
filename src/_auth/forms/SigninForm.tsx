@@ -51,14 +51,6 @@ const SigninForm = () => {
     }
   };
 
-  const handleDemoLogin = () => {
-    const demoCredentials = {
-      email: "pawan@gmail.com",
-      password: "pawan123",
-    };
-    handleSignin(demoCredentials);
-  };
-
   return (
     <Form {...form}>
       <div className="bg-gray-800 h-16 fixed top-0 w-full z-10">
@@ -125,13 +117,6 @@ const SigninForm = () => {
             ) : (
               "Log in"
             )}
-          </Button>
-
-          <Button
-            type="button"
-            style={{ backgroundColor: "#1C7FC2" }}
-            onClick={handleDemoLogin}>
-            Demo Login
           </Button>
 
           <p className="text-small-regular text-light-2 text-center mt-2">
