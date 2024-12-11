@@ -224,7 +224,7 @@ const AllFriends = () => {
                         "{item.to}"{" "}
                       </span>{" "}
                       <span className="text-lg font-bold text-red">
-                        &#8377;&nbsp;{item.amount.toFixed(1)}
+                        € &nbsp;{item.amount.toFixed(1)}
                       </span>
                     </p>
                   ))}

@@ -144,7 +144,7 @@ const Settlement = () => {
                   Saving... <Loader />
                 </>
               ) : (
-                <span>&#8377; {cashAmount} Record By Cash</span>
+                <span>€ {cashAmount} Record By Cash</span>
               )}
             </Button>
           </form>

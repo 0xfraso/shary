@@ -84,7 +84,7 @@ const SimplifyCard: React.FC<SimplifyCardProps> = ({ activities, userId }) => {
               payeer - receiver < 0 ? "text-red" : "text-green-500"
             }`}>
             {" "}
-            &#8377;{(payeer - receiver).toFixed(2)}
+            € {(payeer - receiver).toFixed(2)}
           </span>
         </p>
         <p className="text-sm">
@@ -93,7 +93,7 @@ const SimplifyCard: React.FC<SimplifyCardProps> = ({ activities, userId }) => {
             {issettlementDataReceiverLoading ? (
               <CircleLoader />
             ) : (
-              <span className="text-red">&#8377;{receiver.toFixed(2)}</span>
+              <span className="text-red">€{receiver.toFixed(2)}</span>
             )}
           </span>{" "}
           & receive{" "}
@@ -101,7 +101,7 @@ const SimplifyCard: React.FC<SimplifyCardProps> = ({ activities, userId }) => {
             {issettlementDataPayerLoading ? (
               <CircleLoader />
             ) : (
-              <span className="text-green-500">&#8377;{payeer.toFixed(2)}</span>
+              <span className="text-green-500">€{payeer.toFixed(2)}</span>
             )}
           </span>
         </p>

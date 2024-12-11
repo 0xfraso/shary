@@ -57,13 +57,13 @@ const GroupActivity = ({ activity }: UserCardProps) => {
   if (isPaidByCurrentUser && isCurrentUserInvolved) {
     const individualAmount = parseFloat(activity.Amout) / splitCount;
     const getback = parseFloat(activity.Amout) - individualAmount;
-    amountMessage = `You get back $${getback.toFixed(2)}`;
+    amountMessage = `You get back € ${getback.toFixed(2)}`;
   } else if (isPaidByCurrentUser && !isCurrentUserInvolved) {
     const individualAmount = parseFloat(activity.Amout);
-    amountMessage = `You get back $${individualAmount.toFixed(2)}`;
+    amountMessage = `You get back € ${individualAmount.toFixed(2)}`;
   } else if (!isPaidByCurrentUser && isCurrentUserInvolved) {
     const individualAmount = parseFloat(activity.Amout) / splitCount;
-    amountMessage = `You owe $${individualAmount.toFixed(2)}`;
+    amountMessage = `You owe € ${individualAmount.toFixed(2)}`;
   } else {
     amountMessage = `Not involved`;
   }
@@ -78,7 +78,7 @@ const GroupActivity = ({ activity }: UserCardProps) => {
           <p className="text-lg font-bold mb-1 mt-2">&ensp;{activity.Desc}</p>
         </div>
         <span className="text-blue-500 text-lg font-bold mt-2">
-          &#8377;{activity.Amout}
+          € {activity.Amout}
         </span>
       </div>
 

@@ -158,13 +158,13 @@ const UserCard: React.FC<UserCardProps> = ({
             <p>
               "{user.name}" owes you{" "}
               <span className="text-lg font-bold text-green-500">
-                &#8377;&nbsp;{receiver.toFixed(1)}
+                € &nbsp;{receiver.toFixed(1)}
               </span>
             </p>
             <p>
               You owe "{user.name}"{" "}
               <span className="text-lg font-bold text-red">
-                &#8377;&nbsp;{payeer.toFixed(1)}
+                € &nbsp;{payeer.toFixed(1)}
               </span>
             </p>
           </>
@@ -182,7 +182,7 @@ const UserCard: React.FC<UserCardProps> = ({
               repayment between two user
             </p>
             <Button className="btn bg-red hover:bg-red" onClick={toggleModal}>
-              Cancle
+              Cancel
             </Button>
             <Button className="btn m-2 bg-green-400" onClick={toggleModal}>
               Confirm

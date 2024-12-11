@@ -41,7 +41,7 @@ const PostCard = ({ post }: PostCardProps) => {
         <p className="font-bold text-gray-400">
           Expenses :{" "}
           <span className="font-bold text-green-400">
-            &#8377;{totalAmount.toFixed(2)}
+            € {totalAmount.toFixed(2)}
           </span>
         </p>
       </Link>

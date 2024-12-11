@@ -163,7 +163,7 @@ const GroupDetails = () => {
                   style={{ paddingBottom: "5px" }}>
                   Expenses :{" "}
                   <span className="font-bold text-green-400">
-                    ${totalAmount.toFixed(2)}
+                    € {totalAmount.toFixed(2)}
                   </span>
                 </p>
               </div>
@@ -262,7 +262,7 @@ const GroupDetails = () => {
                             "{item.to}"{" "}
                           </span>{" "}
                           <span className="text-lg font-bold text-red ">
-                            &#8377;&nbsp;{item.amount.toFixed(1)}
+                            €&nbsp;{item.amount.toFixed(1)}
                           </span>
                         </p>
                       </>
